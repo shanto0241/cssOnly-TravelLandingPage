@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Josefin Sans', sans-serif;
+    box-sizing: border-box;
+   
+}
+
+
+header{
+    width: 100%;
+    height: 100vh;
+    background-image:  linear-gradient(180deg, rgba(0,0,0,0.5), rgba(0,0,0,0.1)), url(../images/bichanakandi.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+nav{
+    width: 100%;
+    height: 12vh;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: white;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+nav .logo{
+    width: 25%;
+    text-align: center;
+    
+
+    
+   
+}
+
+nav .nav-menu{
+    width: 40%;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+nav a:first-child{
+    color: red;
+}
+nav a:hover{
+    color: red;
+}
+
+main{
+    width: 100%;
+    height: 88vh;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 3px;
+    
+}
+
+section h1{
+    margin: 10px 0 20px 0;
+    font-size: 3.5rem;
+    text-shadow: 1px 1px 2px black;
+    word-spacing: 3px;
+}
+
+section h3{
+    margin: 10px 0 15px 0;
+    font-size: 2rem;
+    text-shadow: 1px 1px 1px black;
+}
+
+section a{
+    color: white;
+    font-size: 2rem;
+    text-decoration: none;
+    background-color: red;
+    border-radius: 5px;
+    padding: 7px;
+    letter-spacing: normal;
+    border-color: black;
+  
+}
+section a:hover{
+    background-color: white;
+    color: red;
+    transition:all 1s ease;
+    
+}
+
+.change-content:after{
+    color:red;
+    background-color: rgba(231, 222, 222, 0.658);
+    font-weight: 900;
+    padding: 7px;
+    border-radius: 5px;
+    border-color: black;
+    content: '';
+    animation: changetext 10s infinite linear;
+    animation-delay: 1s;
+
+}
+
+@keyframes changetext {
+    0%{content: "Jaflong";}
+    10%{content: "Ratargul";}
+    20%{content: "Bichanakandi";}
+    30%{content: "Lalakhal";}
+    40%{content: "Madhabkundo";}
+    50%{content: "Shreemangal";}
+    60%{content: "Jainta Hill";}
+    70%{content: "Haripur";}
+    80%{content: "Shah Jalal Mazar";}
+    90%{content: "Shah Poran Mazar";}
+    100%{content: "Int. Cricket Stadium";}
+    
+}
+
